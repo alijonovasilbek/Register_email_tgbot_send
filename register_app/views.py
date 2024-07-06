@@ -26,6 +26,7 @@ class UserViewSet(viewsets.ModelViewSet):
             return UserGetSerializer
         return UserSerializer
 
+
     def perform_create(self, serializer):
         instance = serializer.save()
         self.send_notification_email(instance)

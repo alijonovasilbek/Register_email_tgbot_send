@@ -21,6 +21,8 @@ class UserSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+
+
 class UserGetSerializer(serializers.ModelSerializer):
     region_user=SerializerMethodField(method_name='get_region',read_only=True)
     class_user=SerializerMethodField(method_name='get_class',read_only=True)

@@ -1,6 +1,5 @@
 
-import os
-from dotenv import load_dotenv
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -14,17 +13,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Load environment variables from .env file
-load_dotenv()
 
 # Set Django secret key
-SECRET_KEY = os.getenv('SECRET_KEY')
+
+TELEGRAM_BOT_TOKEN="6677053510:AAEIqRU-YfBRNEhkfDyd7YdfzaxPhyc6l_Y"
+TELEGRAM_CHAT_ID=5737465114
+SECRET_KEY="django-insecure-0620jmqdn(i1!sdz87ng_pt+@1p$unfv0z&o*c*($d+!0o38*4"
+
 
 # Email configuration
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 
-# Telegram bot configuration
-TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
-TELEGRAM_CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -138,7 +136,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'alijonovasilbek058@gmail.com'
 
-
+EMAIL_HOST_PASSWORD="tpcw qfkd kvmi jjsa"
 
 
 
